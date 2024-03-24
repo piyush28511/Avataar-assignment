@@ -1,0 +1,24 @@
+.dropdown-menu {
+  background: #2F302C;
+  position: absolute;
+  top: 89px;
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.dropdown-link {
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.dropdown-menu :hover{
+  background-color: grey;
+  border-radius: 10px;
+}
+

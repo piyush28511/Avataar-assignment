@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust as needed */
+  position: absolute;
+  width: 100vw;
+}
+
+.image-container {
+  position: absolute;
+  transition: transform 0.5s ease-in-out; /* Add transition effect to transform property */
+}
+
+.image1 {
+  width: 42vw; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures proper alignment */
+  margin: 0 auto; /* Horizontally center */
+  position: relative;
+  z-index: 3; /* Ensure the first image is above the others */
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image2, .image3, .image4, .image5 {
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+
+.image2 {
+  width: 22vw; /* Adjust size as needed */
+  height: auto;
+  left: -30%; /* Adjust to hide 30% behind image 1 */
+  z-index: 2; /* Ensure the second image is above the third */
+}
+
+.image4 {
+  width: 22vw; /* Adjust size as needed */
+  right: -30%;/* Adjust to hide 30% behind image 1 */
+  z-index: 2; /* Ensure the second image is above the third */
+  height: auto;
+}
+
+.image3 {
+  width: 13.75vw; /* Adjust size as needed */
+  left: -50%; /* Adjust to hide 30% behind image 2 */
+  z-index: 1; /* Ensure the third image is behind the others */
+  height: auto;
+}
+
+.image5 {
+  width: 13.75vw; /* Adjust size as needed */
+  right: -50%; /* Adjust to hide 30% behind image 2 */
+  z-index: 1; /* Ensure the third image is behind the others */
+  height: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  width: auto;
+}
+
+.button-item {
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+  size: 1vw;
+}
